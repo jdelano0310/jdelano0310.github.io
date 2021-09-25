@@ -75,8 +75,8 @@
 				if (currentPage == '') {
 					$('#content').load('thelatest.html', 
 						function() {
-							$('#TheLatest').parent().addClass('current');
-							currentPage = 'TheLatest';
+							$('#thelatest').parent().addClass('current');
+							currentPage = 'thelatest';
 						}
 					);
 				}
