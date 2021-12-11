@@ -28,7 +28,7 @@
 			var startTimeLocation = settings.videoID.indexOf('start');
 
 			if(startTimeLocation > 0) {
-				var splitID = settings.videoID.split('-');
+				var splitID = settings.videoID.split('|');
 				settings.videoID = splitID[0];
 
 				videoPlayback = '&' + splitID[1];
