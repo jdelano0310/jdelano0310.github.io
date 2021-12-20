@@ -32,7 +32,7 @@
 			
 			if(settings.videoID.indexOf('twitch') > -1) {
 				src = settings.videoID.split('/')[1];
-				popupIfame='<iframe class="grtyoutube-iframe" src="https://clips.twitch.tv/embed?clip=' + src + '&parent=www.fansofstapes.com" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>';
+				popupIfame='<iframe class="grtyoutube-iframe" src="https://clips.twitch.tv/embed?clip=' + src + '&parent=www.fansofstapes.com" autoplay="true" frameborder="0" allowfullscreen="false" scrolling="no"></iframe>';
 			} else {
 
 				// check for start and end paramters in the video id
