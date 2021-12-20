@@ -16,6 +16,8 @@
 			// Get video ID
 			var getvideoid = $(this).attr("youtubeid");
 			var videoPlayback = '';
+			var src = '';
+			var popupIfame = '';
 			
 			// Default options
 			var settings = $.extend({
@@ -24,19 +26,31 @@
 				theme: "dark"
 			}, options );
 
-			// check for start and end paramters in the video id
-			var startTimeLocation = settings.videoID.indexOf('start');
-
-			if(startTimeLocation > 0) {
-				var splitID = settings.videoID.split('|');
-				settings.videoID = splitID[0];
-
-				videoPlayback = '&' + splitID[1];
-			}
-
 			// Convert some values
 			if(settings.autoPlay === true) { settings.autoPlay = 1 } else if(settings.autoPlay === false)  { settings.autoPlay = 0 }
 			if(settings.theme === "dark") { settings.theme = "grtyoutube-dark-theme" } else if(settings.theme === "light")  { settings.theme = "grtyoutube-light-theme" }
+			
+			if(settings.videoID.indexOf('twitch') > -1) {
+				src = settings.videoID.split('/')[1];
+				popupIfame='<iframe src="https://clips.twitch.tv/embed?clip=' + src + '&parent=www.fansofstapes.com" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>';
+				alert('Twitch');
+			} else {
+
+				// check for start and end paramters in the video id
+				var startTimeLocation = settings.videoID.indexOf('start');
+
+				if(startTimeLocation > 0) {
+					var splitID = settings.videoID.split('|');
+					settings.videoID = splitID[0];
+
+					videoPlayback = '&' + splitID[1];
+				}
+
+				src = 'https://www.youtube.com/embed/'+settings.videoID+'?rel=0&wmode=transparent&autoplay='+settings.autoPlay+videoPlayback+'&iv_load_policy=3';
+				popupIfame = '<iframe class="grtyoutube-iframe" src="'+src+'" allowfullscreen frameborder="0" allow="autoplay; fullscreen"></iframe>'
+				alert('YouTube');
+			}
+			alert('src: ' + src);
 
 			// Initialize on click
 			if(getvideoid) {
@@ -44,7 +58,7 @@
 					 $("body").append('<div class="grtyoutube-popup '+settings.theme+'">'+
 								'<div class="grtyoutube-popup-content">'+
 									'<span class="grtyoutube-popup-close"></span>'+
-									'<iframe class="grtyoutube-iframe" src="https://www.youtube.com/embed/'+settings.videoID+'?rel=0&wmode=transparent&autoplay='+settings.autoPlay+videoPlayback+'&iv_load_policy=3" allowfullscreen frameborder="0" allow="autoplay; fullscreen"></iframe>'+
+									popupIfame+
 								'</div>'+
 							'</div>');
 				});
