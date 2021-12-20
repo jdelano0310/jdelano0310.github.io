@@ -33,7 +33,6 @@
 			if(settings.videoID.indexOf('twitch') > -1) {
 				src = settings.videoID.split('/')[1];
 				popupIfame='<iframe src="https://clips.twitch.tv/embed?clip=' + src + '&parent=www.fansofstapes.com" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>';
-				alert('Twitch');
 			} else {
 
 				// check for start and end paramters in the video id
@@ -48,9 +47,7 @@
 
 				src = 'https://www.youtube.com/embed/'+settings.videoID+'?rel=0&wmode=transparent&autoplay='+settings.autoPlay+videoPlayback+'&iv_load_policy=3';
 				popupIfame = '<iframe class="grtyoutube-iframe" src="'+src+'" allowfullscreen frameborder="0" allow="autoplay; fullscreen"></iframe>'
-				alert('YouTube');
 			}
-			alert('src: ' + src);
 
 			// Initialize on click
 			if(getvideoid) {
