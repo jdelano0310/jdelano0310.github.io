@@ -35,18 +35,29 @@
 				popupIfame='<iframe class="grtyoutube-iframe" src="https://clips.twitch.tv/embed?clip=' + src + '&parent=www.fansofstapes.com" autoplay="true" frameborder="0" allowfullscreen="false" scrolling="no"></iframe>';
 			} else {
 
-				// check for start and end paramters in the video id
-				var startTimeLocation = settings.videoID.indexOf('start');
+				if(settings.videoID.indexOf('FB/') > -1) {
+					src = settings.videoID.split('/')[1];
+					popupIfame='<iframe class="grtyoutube-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com' + src + '&show_text=false&width=850&t=0" width="100%" height="100%" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>';
+				} else {
 
-				if(startTimeLocation > 0) {
-					var splitID = settings.videoID.split('|');
-					settings.videoID = splitID[0];
+					// check for start and end paramters in the video id
+					var startTimeLocation = settings.videoID.indexOf('start');
 
-					videoPlayback = '&' + splitID[1];
+					if(startTimeLocation > 0) {
+						// has a start and end time to show
+						var splitID = settings.videoID.split('|');
+						settings.videoID = splitID[0];
+
+						videoPlayback = '&' + splitID[1];
+
+						src = 'https://www.youtube.com/embed/'+settings.videoID+'?rel=0&wmode=transparent&autoplay='+settings.autoPlay+videoPlayback+'&iv_load_policy=3';	
+					} else {
+						// doesn't have specidied start and end time to show
+						src = 'https://www.youtube.com/embed/'+settings.videoID+'?rel=0&wmode=transparent&autoplay='+settings.autoPlay+'&iv_load_policy=3';
+					}
+
+					popupIfame = '<iframe class="grtyoutube-iframe" src="'+src+'" allowfullscreen frameborder="0" allow="autoplay; fullscreen"></iframe>'
 				}
-
-				src = 'https://www.youtube.com/embed/'+settings.videoID+'?rel=0&wmode=transparent&autoplay='+settings.autoPlay+videoPlayback+'&iv_load_policy=3';
-				popupIfame = '<iframe class="grtyoutube-iframe" src="'+src+'" allowfullscreen frameborder="0" allow="autoplay; fullscreen"></iframe>'
 			}
 
 			// Initialize on click
