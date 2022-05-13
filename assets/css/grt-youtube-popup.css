@@ -1,3 +1,9 @@
+.grtyoutube-header {
+	font-weight: 600;
+	font-size: large;
+	padding-left: 3px;
+}
+
 .grtyoutube-popup {
 	position:fixed;
 	top:0;

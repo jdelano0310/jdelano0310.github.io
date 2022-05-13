@@ -37,7 +37,7 @@
 
 				if(settings.videoID.indexOf('FB/') > -1) {
 					src = settings.videoID.split('/')[1];
-					popupIfame='<iframe class="grtyoutube-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com' + src + '&show_text=false&width=850&t=0" width="100%" height="100%" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>';
+					popupIfame='<iframe class="grtyoutube-iframe" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com' + src + '&show_text=false&width=850&t=0" width="100%" height="100%" data-autoplay="true" scrolling="no" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="false"></iframe>';
 				} else {
 
 					// check for start and end paramters in the video id
