@@ -2154,7 +2154,7 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-/* Stand-up samples UL */
+/* Stand-up samples */
 	#standup-samples ul {
 		list-style-type: none; 
 		margin: 0; 
@@ -2176,7 +2176,7 @@ input, select, textarea {
 		height: 170px;
 	}
 
-	.standup-sample-header {
+	.standup-samples-header {
 		font-weight: 600;
 		font-size: large;
 		padding-left: 3px;
