@@ -52,7 +52,7 @@
 
 						src = 'https://www.youtube.com/embed/'+settings.videoID+'?rel=0&wmode=transparent&autoplay='+settings.autoPlay+videoPlayback+'&iv_load_policy=3';	
 					} else {
-						// doesn't have specidied start and end time to show
+						// doesn't have specified start and end time to show
 						src = 'https://www.youtube.com/embed/'+settings.videoID+'?rel=0&wmode=transparent&autoplay='+settings.autoPlay+'&iv_load_policy=3';
 					}
 
