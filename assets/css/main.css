@@ -1781,10 +1781,15 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
+		.image.centered img {
+			margin: 0 auto;
+			width: auto;
+		}
+
+		.image.thumbnail {
+			width: 175px;
+			height: 170px;
+		}
 
 /* Button */
 
@@ -2148,6 +2153,34 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+
+/* Stand-up samples UL */
+	#standup-samples ul {
+		list-style-type: none; 
+		margin: 0; 
+		padding: 0; 
+		overflow: hidden;
+	}
+
+	#standup-samples li {
+		float: left; 
+		padding-left: 15px;
+	}
+
+	#standup-samples li div {
+		text-align:center;
+	}
+
+	#standup-samples li div img {
+		width: 175px;
+		height: 170px;
+	}
+
+	.standup-sample-header {
+		font-weight: 600;
+		font-size: large;
+		padding-left: 3px;
+	}
 
 /* Nav */
 
