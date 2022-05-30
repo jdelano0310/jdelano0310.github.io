@@ -2182,6 +2182,65 @@ input, select, textarea {
 		padding-left: 3px;
 	}
 
+	/* scrolling standup-reviews */
+	#scroll-container {
+		border-radius: 5px;
+		height: 145px;
+		width: 350px;
+		overflow: hidden;
+		background: #364050 url("images/bg01.png");
+	  }
+	  
+	  #scroll-text {
+		line-height: 1.2;
+		display: inline-block;		  
+		padding-left: 5px;
+		padding-right: 5px;
+		height: 100%;
+		text-align:Left !important;
+		font-size: small;
+		color: white;
+		
+		/* animation properties */
+		-moz-transform: translateY(125%);
+		-webkit-transform: translateY(125%);
+		transform: translateY(125%);
+		
+		-moz-animation: my-animation 20s linear infinite;
+		-webkit-animation: my-animation 20s linear infinite;
+		animation: my-animation 20s linear infinite;
+	  }
+	  
+	  /* for Firefox */
+	  @-moz-keyframes my-animation {
+		from { -moz-transform: translateY(100%); }
+		to { -moz-transform: translateY(-100%); }
+	  }
+	  
+	  /* for Chrome */
+	  @-webkit-keyframes my-animation {
+		from { -webkit-transform: translateY(100%); }
+		to { -webkit-transform: translateY(-100%); }
+	  }
+	  
+	  @keyframes my-animation {
+		from {
+		  -moz-transform: translateY(100%);
+		  -webkit-transform: translateY(100%);
+		  transform: translateY(100%);
+		}
+		to {
+		  -moz-transform: translateY(-100%);
+		  -webkit-transform: translateY(-100%);
+		  transform: translateY(-100%);
+		}
+	  }
+	.review-header {
+		color:burlywood;
+		font-weight: bold;
+		font-style: italic;
+	}
+
 /* Nav */
 
 	#nav > ul > li > ul {
