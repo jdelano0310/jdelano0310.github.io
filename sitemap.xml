@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
+		<loc>https://www.fansofstapes.com</loc>
+		<priority>1.00</priority>
+		<lastmod>2022-05-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.fansofstapes.com/index.html</loc>
+		<priority>1.00</priority>
+		<lastmod>2022-04-01</lastmod>
+	</url>
+	<url>
 		<loc>https://www.fansofstapes.com/thelatest.html</loc>
 		<priority>1.00</priority>
 		<lastmod>2022-06-22</lastmod>
 	</url>
 	<url>
-		<loc>https://www.fansofstapes.com/index.html</loc>
-		<priority>1.00</priority>
-		<lastmod>2022-04-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com</loc>
-		<priority>1.00</priority>
-		<lastmod>2022-05-24</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com/aboutjoe.html</loc>
+		<loc>https://www.fansofstapes.com/tvandmovies.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2021-08-04</lastmod>
+		<lastmod>2021-08-10</lastmod>
 	</url>
 	<url>
-		<loc>https://www.fansofstapes.com/archive.html</loc>
+		<loc>https://www.fansofstapes.com/readallabouthim.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2021-12-19</lastmod>
+	</url>
+	<url>
+		<loc>https://www.fansofstapes.com/podcasthost.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2022-03-24</lastmod>
+	</url>
+	<url>
+		<loc>https://www.fansofstapes.com/podcastguest.html</loc>
 		<priority>0.50</priority>
 		<lastmod>2022-03-09</lastmod>
 	</url>
 	<url>
 		<loc>https://www.fansofstapes.com/highlights.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2021-12-20</lastmod>
+		<lastmod>2021-12-19</lastmod>
 	</url>
 	<url>
-		<loc>https://www.fansofstapes.com/podcastguest.html</loc>
+		<loc>https://www.fansofstapes.com/archive.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2022-03-10</lastmod>
+		<lastmod>2022-03-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.fansofstapes.com/podcasthost.html</loc>
+		<loc>https://www.fansofstapes.com/aboutjoe.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2022-03-25</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com/readallabouthim.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2021-12-20</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com/tvandmovies.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2021-08-11</lastmod>
+		<lastmod>2021-08-03</lastmod>
 	</url>
 </urlset>
