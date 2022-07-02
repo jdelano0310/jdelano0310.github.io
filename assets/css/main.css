@@ -2186,8 +2186,9 @@ input, select, textarea {
 	#scroll-container {
 		border-radius: 5px;
 		height: 145px;
-		width: 350px;
+		max-width: 350px;
 		overflow: hidden;
+		word-wrap: break-word;
 		background: #364050 url("images/bg01.png");
 	  }
 	  
