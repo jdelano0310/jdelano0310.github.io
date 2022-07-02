@@ -2164,7 +2164,6 @@ input, select, textarea {
 
 	#standup-samples li {
 		float: left; 
-		padding-left: 15px;
 	}
 
 	#standup-samples li div {
@@ -2172,6 +2171,7 @@ input, select, textarea {
 	}
 
 	#standup-samples li div img {
+		border-radius: 5px;
 		width: 175px;
 		height: 170px;
 	}
@@ -2185,7 +2185,7 @@ input, select, textarea {
 	/* scrolling standup-reviews */
 	#scroll-container {
 		border-radius: 5px;
-		height: 145px;
+		height: 175px;
 		max-width: 350px;
 		overflow: hidden;
 		word-wrap: break-word;
