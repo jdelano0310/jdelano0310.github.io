@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.fansofstapes.com/thelatest.html</loc>
+		<loc>https://www.fansofstapes.com</loc>
 		<priority>1.00</priority>
-		<lastmod>2023-03-09</lastmod>
+		<lastmod>2023-03-06</lastmod>
 	</url>
 	<url>
 		<loc>https://www.fansofstapes.com/index.html</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-12-29</lastmod>
+		<lastmod>2021-12-28</lastmod>
 	</url>
 	<url>
-		<loc>https://www.fansofstapes.com</loc>
+		<loc>https://www.fansofstapes.com/thelatest.html</loc>
 		<priority>1.00</priority>
-		<lastmod>2023-03-07</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com/aboutjoe.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2021-05-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com/archive.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2022-09-05</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com/highlights.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2021-09-17</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com/podcastguest.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2021-12-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com/podcasthost.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2021-12-21</lastmod>
-	</url>
-	<url>
-		<loc>https://www.fansofstapes.com/readallabouthim.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2021-09-17</lastmod>
+		<lastmod>2023-03-16</lastmod>
 	</url>
 	<url>
 		<loc>https://www.fansofstapes.com/tvandmovies.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2021-05-09</lastmod>
+		<lastmod>2021-05-08</lastmod>
+	</url>
+	<url>
+		<loc>https://www.fansofstapes.com/readallabouthim.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2021-09-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.fansofstapes.com/podcasthost.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2021-12-20</lastmod>
+	</url>
+	<url>
+		<loc>https://www.fansofstapes.com/podcastguest.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2021-12-05</lastmod>
+	</url>
+	<url>
+		<loc>https://www.fansofstapes.com/highlights.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2021-09-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.fansofstapes.com/archive.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2022-09-04</lastmod>
+	</url>
+	<url>
+		<loc>https://www.fansofstapes.com/aboutjoe.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2021-05-01</lastmod>
 	</url>
 </urlset>
